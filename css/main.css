@@ -785,17 +785,18 @@ a:hover {
   animation-timing-function: ease-in;
 }
 
-.art-portfoilio-section-title {
-  height: 400px;
-  width: 225px;
+.design-portfolio-container {
+  width: 100%;
+  height: 900px;
+  position: relative;
+  display:none;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
 }
 
-.art-portfolio-section-image {
-  height: 400px;
-  width: auto;
-}
 
-.art-portfolio-menu-container {
+.art-portfolio-menu-container, .design-portfolio-menu-container {
   width: 147px;
   height: 100%;
   position: absolute;
@@ -803,14 +804,22 @@ a:hover {
   top: 0;
 }
 
-.art-portfolio-content-container {
+.art-portfolio-content-container  {
   margin-left: 147px;
   width: 81%;
   max-height: 700px;
   box-sizing: border-box;
 }
 
-.art-portfolio-section {
+.design-portfolio-content-container  {
+  margin-left: 147px;
+  width: 81%;
+  max-height: 900px;
+  box-sizing: border-box;
+}
+
+
+.art-portfolio-section{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -821,7 +830,30 @@ a:hover {
     height: 600px;
   }
   
+  .design-portfolio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 25px 0px;
+    width: 100%;
+    border-bottom: 1px dotted var(--medgrey);
+    height: 700px;
+  }
 
+  .design-slide {
+    width: 70%;
+    height: 90%;
+    padding: 0em 1em;
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+  }
+
+.design-slide:first-child {
+    display: block;
+  }
+  
 .slide {
     width: 90%;
     padding: 0em 1em;

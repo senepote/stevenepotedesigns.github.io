@@ -44,6 +44,17 @@ $(() => {
       }
       event.stopImmediatePropagation();
     })
+
+      // Click handler to expand and contract design-portfolio section
+      $('#design-portfolio-header').click((event) => {
+        console.log('Clicked');
+        if ($('.design-portfolio-container').is( ":hidden" )) {
+          $('.design-portfolio-container').slideDown( "slow" );
+        } else {
+          $('.design-portfolio-container').slideUp( "slow" );
+        }
+        event.stopImmediatePropagation();
+      })
   
     // Click handler to expand and contract contact section
     $('#contact-header').click((event) => {
@@ -67,12 +78,20 @@ showSlides(slideIndex);function plusSlide(n) {
 function showSlides(n) {
     let i;
     const slides = document.getElementsByClassName("slide");
+    const designSlides = document.getElementsByClassName("design-slide");
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
     slides[slideIndex-1].style.display = "block";
+
+    if (n > designSlides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = designSlides.length}
+    for (i = 0; i < designSlides.length; i++) {
+      designSlides[i].style.display = "none";
+    }
+    designSlides[slideIndex-1].style.display = "block";
   }
   
   function prevSlide() {
