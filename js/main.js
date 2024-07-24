@@ -26,10 +26,10 @@ $(() => {
     // Click handler to expand and contract portfolio section
     $('#portfolio-header').click((event) => {
       console.log('Clicked');
-      if ($('.portfolio-container').is( ":hidden" )) {
-        $('.portfolio-container').slideDown( "slow" );
+      if ($('.portfolio-content-container').is( ":hidden" )) {
+        $('.portfolio-content-container').slideDown( "slow" );
       } else {
-        $('.portfolio-container').slideUp( "slow" );
+        $('.portfolio-content-container').slideUp( "slow" );
       }
       event.stopImmediatePropagation();
     })
