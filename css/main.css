@@ -553,8 +553,8 @@ a:hover {
   padding-bottom: 1.5em;
   border-bottom: 1px solid var(--medgrey);
   width: 100%;
-  /* height: 500px; */
   height: auto;
+  border: 1px solid blue;
 }
 
 .portfoilio-section-title {
@@ -573,8 +573,27 @@ a:hover {
 
 .web-image {
   width: 100%;
-  /* border: 5px solid aqua; */
   border-radius: 5px;
+}
+
+.slide {
+  width: 85%;
+  position: absolute;
+  display: none;
+}
+
+.portfoilio-section-image-slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.slide:first-child {
+  display: block;
 }
 
 .portfolio-section-tech-stack, .portfolio-section-description, .portfolio-section-sitelink, .portfolio-section-design-stack {
@@ -815,17 +834,7 @@ a:hover {
     display: block;
   }
   
-.slide {
-    width: 90%;
-    padding: 0em 1em;
-    box-sizing: border-box;
-    position: absolute;
-    display: none;
-  }
 
-.slide:first-child {
-    display: block;
-  }
 
 .prev, .next {
     position: absolute;
@@ -1046,6 +1055,9 @@ a:hover {
     height: 150px;
     width: 100%;
   }
+
+  
+
   .portfoilio-section-image > img, .art-portfoilio-section-image > img {
     max-height: 190px;
   }
