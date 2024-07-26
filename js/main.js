@@ -12,16 +12,7 @@ $(() => {
     //   event.stopImmediatePropagation();
     // })
     // // Click handler to expand and contract resume section
-    $('#resume-header').click((event) => {
-      if ($('.resume-container').is( ":hidden" )) {
-        $('.resume-container').slideDown( "slow", () => {
-          $('.resume-container').css('display', 'flex');
-        } );
-      } else {
-        $('.resume-container').slideUp( "slow" );
-      }
-      event.stopImmediatePropagation();
-    })
+
   
     // // Click handler to expand and contract portfolio section
     // $('#portfolio-header').click((event) => {
@@ -57,6 +48,23 @@ $(() => {
     //   })
   
     // Click handler to expand and contract contact section
+    
+    
+// POSSIBLY KEEP LATER
+
+
+    
+    $('#resume-header').click((event) => {
+      if ($('.resume-container').is( ":hidden" )) {
+        $('.resume-container').slideDown( "slow", () => {
+          $('.resume-container').css('display', 'flex');
+        } );
+      } else {
+        $('.resume-container').slideUp( "slow" );
+      }
+      event.stopImmediatePropagation();
+    })
+    
     $('#contact-header').click((event) => {
       console.log('Clicked');
       if ($('.contact-container').is( ":hidden" )) {
