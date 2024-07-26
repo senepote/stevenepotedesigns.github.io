@@ -99,9 +99,6 @@
   display: block;
 }
 
-.display-none {
-  display: none;
-}
 
 /*
 =======================================
@@ -757,7 +754,6 @@ a:hover {
   width: 100%;
   height: 1200px;
   position: relative;
-  display:none;
   animation-name: fadein;
   animation-duration: 1s;
   animation-timing-function: ease-in;
@@ -826,7 +822,6 @@ a:hover {
     padding: 0em 1em;
     box-sizing: border-box;
     position: absolute;
-    display: none;
   }
 
 .design-slide:first-child {
@@ -1055,8 +1050,6 @@ a:hover {
     width: 100%;
   }
 
-  
-
   .portfoilio-section-image > img, .art-portfoilio-section-image > img {
     max-height: 190px;
   }
@@ -1071,11 +1064,39 @@ a:hover {
 /*-------------------------------------
   Contact Section
 --------------------------------------*/
+
+.section-nav {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.section-nav  .tooltipText {
+  display: flex;
+  visibility: hidden;
+  width: 170px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: var(--pink);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.section-nav:hover .tooltipText {
+  visibility: visible;
+}
+
 .contact-container {
+  display: none;
   width: 100%;
   height: 250px;
   position: relative;
-  display:none;
   animation-name: fadein;
   animation-duration: 1s;
   animation-timing-function: ease-in;
