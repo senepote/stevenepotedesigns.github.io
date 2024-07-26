@@ -95,9 +95,9 @@
   color: var(--bluepurple);
 }
 
-.block {
+/* .block {
   display: block;
-}
+} */
 
 
 /*
@@ -165,6 +165,32 @@ a:hover {
   border: 13px solid black;
 }
 
+.quickLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+}
+
+.aboutMeText {
+  display: flex;
+  border-right: 1px solid var(--bluepurple);
+  font-style: normal;
+  padding: 0px 10px;
+  color: var(--pink);
+  height: 35px;
+  align-items: center;
+}
+
+.contactText {
+  font-style: normal;
+  padding: 0px 10px;
+  color: var(--pink);
+  height: 35px;
+  align-items: center;
+}
+
 /*
 =======================================
   Main Content
@@ -180,47 +206,49 @@ a:hover {
 /*-------------------------------------
   Section Containers
 --------------------------------------*/
-.section-content {
-  padding: 2em;
-  box-sizing: border-box;
-}
+
 
 .section-content-container {
   display: flex;
   flex-direction: column;
 }
 
+.section-content {
+  padding: 2em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 /*-------------------------------------
   Section Nav
 --------------------------------------*/
 .section-nav {
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative; 
 }
 
-
-.section-nav { 
- display: flex;
- justify-content: space-between;
-}
-
-
-.section-chevron-container {
-
-}
 
 .section-header-right {
+  /* justify-self: flex-end; */
   width: 652px;
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid var(--pink);
 }
 
 .section-chevron-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
   font-size: 2em;
   position: absolute;
-  right: 1em;
-  top: .5em;
+  right: .6em;
+  top: .6em;
 }
 
 
@@ -351,7 +379,9 @@ a:hover {
   Resume Section
 --------------------------------------*/
 .resume-container{
-  display: none;
+  /* display: none; */
+  display: flex;
+  flex-direction: row;
   padding: 2em;
   width: 100%;
   box-sizing: border-box;
@@ -596,6 +626,7 @@ a:hover {
   width: 100%;
   display: flex;
   justify-content: center;
+  text-align: center;
   border-bottom: 1px solid var(--medgrey);
   padding: .7em 0;
 }
@@ -1065,35 +1096,12 @@ a:hover {
   Contact Section
 --------------------------------------*/
 
-.section-nav {
-  position: relative;
-  display: inline-block;
-}
-
-/* Tooltip text */
-.section-nav  .tooltipText {
-  display: flex;
-  visibility: hidden;
-  width: 170px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  color: var(--pink);
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  text-transform: uppercase;
-}
-
 .section-nav:hover .tooltipText {
   visibility: visible;
 }
 
 .contact-container {
-  display: none;
+  /* display: none; */
   width: 100%;
   height: 250px;
   position: relative;
