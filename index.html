@@ -47,9 +47,6 @@
               <i class="fas fa-user-circle"></i>
             </div>
           </div>
-          <div class="section-chevron-container">
-            <!-- <i class="fas fa-chevron-circle-up"></i> -->
-          </div>
         </div>
         <div class="section-content-container"><!-- Holds section header and content -->
 
@@ -104,7 +101,307 @@
         </div> <!-- section content container close -->
 
       </section> <!-- section close -->
-      <!--
+
+
+    <!--
+    Portfolio Section
+    -->
+    <section class="section-container darkgrey-back"> <!-- Holds the entire section (Profile) -->  
+      <div id="portfolio-header" class="section-nav"> <!-- Holds section nav bar/title -->
+        <div class="section-nav-title bluepurple-back white-font">
+          <span>PORTFOLIO</span>
+            <div class="section-nav-icon-container bluepurple-back">
+              <i class="fas fa-briefcase"></i>
+            </div>
+          </div>
+      </div>
+      
+      <div class="section-content-container"><!-- Holds section header and content -->
+          <div class="portfolio-content-container">
+            <div id="web-section" class="resume-header medgrey-back">
+              <i class="bluepurple-font"></i>
+              <span class="white-font resume-titles"> WEB DESIGNS</span>
+            </div>
+
+            <!-- LEADR entry start  -->
+            <div class="portfolio-section">
+
+              <span class="portfolio-section-title block white-font">Leadr</span>
+
+              <div class="portfoilio-section-image-slide">
+                  <div class="slide">
+                    <img 
+                      class="web-image"
+                      src="css/img/pageImages/LeadrApp.png" 
+                      alt="Image 1"
+                    >
+                  </div>
+                  <div class="slide">
+                    <img 
+                      class="web-image"
+                      src="css/img/siteDesigns/LandingPage.PNG" 
+                      alt="Image 2"
+                    >
+                  </div>
+                  <div class="slide">
+                    <img 
+                      class="web-image"
+                      src="css/img/siteDesigns/1_1 Meeting.webp" 
+                      alt="Image 3"
+                    >
+                  </div>
+                    <div class="slide">
+                    <img 
+                      class="web-image"
+                      src="css/img/siteDesigns/LearningSection.png" 
+                      alt="Image 4"
+                    >
+                  </div>
+                  <div class="slide">
+                    <img 
+                      class="web-image"
+                      src="css/img/siteDesigns/Recognition.PNG" 
+                      alt="Image 5"
+                    >
+                  </div>
+                  <div class="slide">
+                    <img 
+                      class="web-image"
+                      src="css/img/siteDesigns/TeamMeeting.PNG" 
+                      alt="Image 6"
+                    >
+                  </div>
+
+                <a class="prev" onclick="prevSlide()">&#10094;</a>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+              </div>
+              
+              <div class="portfoilio-section-title">
+
+                
+                <div class="portfolio-section-design-stack">
+                  Figma  |  Material.UI  | Figjam | Emotion.JS
+                </div>
+
+                <div class="portfolio-section-tech-stack">
+                React  |  Redux  | Typescript | Javascript | Node.js 
+                </div>
+                
+                <div class="portfolio-section-description">
+                A 'People Development' web/mobile application software
+                </div>
+                <!-- <div class="portfolio-section-sitelink"> <a href="https://app.leadr.com/" target="_blank">
+                &nbsp;<i class="fab fa-chrome"></i> &nbsp;Open Site </a> &nbsp;&nbsp;| &nbsp; &nbsp;
+                </div> -->
+              </div>
+            </div><!-- Close for portfolio entry -->
+
+            <!-- RPM entry start  -->
+            <div class="portfolio-section">
+              
+              <span class="portfolio-section-title block white-font">RPM</span>
+
+              <div class="portfoilio-section-image">
+                <img 
+                  class="web-image" 
+                  src="css/img/pageImages/RPM_Dash.png" 
+                  alt=""
+                >
+              </div>
+              
+              <div class="portfoilio-section-title">
+                                
+                  <div class="portfolio-section-design-stack">
+                    AdobeXD  |  Adobe Sketch  | Figjam | Adobe Illustrator
+                  </div>
+              
+                  <div class="portfolio-section-tech-stack">
+                    React  |  Typescript | Node.js |  MongoDB | Firebase
+                  </div>
+
+                  <div class="portfolio-section-description">
+                    A Management application used to track, monitor and test for site specific equipment.
+                  </div>
+
+              </div>
+            </div><!-- Close for portfolio entry -->
+
+            <!-- MUSIC entry start  -->
+            <!-- <div class="portfolio-section">
+              <div class="portfoilio-section-image">
+                <img src="css/img/pageImages/Austin-Music.png" alt="">
+              </div>
+              <div class="portfoilio-section-title">
+                <span class="portfolio-section-title block white-font">Austin Music Scene</span>
+                <div class="portfolio-section-tech-stack">
+                Node.js  |  Express  |  React  |  MongoDB
+                </div>
+                <div class="portfolio-section-description">
+                An Austin specific music app with information and details about different events and bands.
+                </div>
+              </div>
+            </div>Close for portfolio entry -->
+
+            <!-- Portfolio entry start  -->
+            <div class="portfolio-section">
+              
+              <span class="portfolio-section-title block white-font">Comic Store</span>
+
+              <div class="portfoilio-section-image">
+                <img 
+                  class="web-image"
+                  src="css/img/pageImages/Comic-Store.png" 
+                  alt=""
+                >
+              </div>
+              
+              <div class="portfoilio-section-title">
+
+                                                
+                <div class="portfolio-section-design-stack">
+                  Adobe:  | Sketch | Photoshop | Illustrator
+                </div>
+            
+
+                <div class="portfolio-section-tech-stack">
+                  Mongoose  |  Express  |  Node.js
+                </div>
+                
+                <div class="portfolio-section-description">
+                A comic book store using a MEN stack. Can add, delete and buy each book, as well as register and login.
+                </div>
+
+              </div>
+            </div><!-- Close for portfolio entry -->
+
+            <!-- Portfolio entry start 
+            <div class="portfolio-section">
+
+              <span class="portfolio-section-title block white-font">What's That Trailer</span>
+
+              <div class="portfoilio-section-image">
+                <img
+                  class="web-image"
+                  src="css/img/pageImages/whats-that-trailer.png" 
+                  alt=""
+                >
+              </div>
+                
+                <div class="portfoilio-section-title">
+                    
+                    <div class="portfolio-section-design-stack">
+                      Adobe:  | Sketch | Photoshop | Illustrator
+                    </div>
+
+                    <div class="portfolio-section-tech-stack">
+                      Node  |  Express  |  Angular  |  MongoDB
+                    </div>
+                    
+                    <div class="portfolio-section-description">
+                      This site lets you search and add movies that you want to see or are upcoming films you want 
+                      to make sure you keep track off once they hit theatres.
+                    </div>
+                  
+                </div>
+            </div> -->
+
+          </div> <!-- Close for container that holds all portfolio entries -->  <!--Close for container that holds entire portfolio section  -->
+
+      </div> <!-- section content container close -->
+
+    </section> <!-- section close -->
+
+          <!--
+      Artwork Portfolio Section
+      -->
+      <section class="section-container darkgrey-back"> <!-- Holds the entire section (Design) -->
+        <div id="art-portfolio-header" class="section-nav"> <!-- Holds section nav bar/title -->
+          <div class="section-nav-title aqua-back white-font">
+            <span>DESIGNS</span>
+            <div class="section-nav-icon-container aqua-back">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="section-content-container"><!-- Holds section header and content -->
+          <div class="art-portfolio-container">            
+              <div id="web-section" class="resume-header medgrey-back">
+                <i class="fas fa-chevron-circle-down bluepurple-font"></i>
+                <span class="white-font resume-titles"> DESIGN </span>
+              </div>
+              
+              <div class="art-portfolio-section">
+
+                  <img
+                  class="art-portfoilio-section-image" 
+                  src="css/img/designWork/RecruitmentBanner.png" 
+                  >
+                
+
+                  <img 
+                  class="art-portfoilio-section-image"
+                  src="css/img/designWork/LostSoulsBlackGreenShirt.png" 
+                  >
+
+                  <img 
+                  class="art-portfoilio-section-image"
+                  src="css/img/designWork/LostSoulsRoundLogo.PNG"
+                  >
+
+                  <img 
+                  class="art-portfoilio-section-image"
+                  src="css/img/designWork/PrideBanner.png"
+                  >
+
+                  <img 
+                  class="art-portfoilio-section-image"
+                  src="css/img/designWork/BannerPlain.png"
+                  >
+
+                  <img
+                  class="art-portfoilio-section-image" 
+                  src="css/img/artwork/CyberSkull.png" 
+                  >
+                
+
+                  <img 
+                  class="art-portfoilio-section-image"
+                  src="css/img/artwork/SplitSkullAndFlowers.png" 
+                  >
+
+                  <img 
+                  class="art-portfoilio-section-image"
+                  src="css/img/artwork/Medusa.png"
+                  >
+
+                  <img 
+                  class="art-portfoilio-section-image"
+                  src="css/img/artwork/DoubleSkullFlowers.png"
+                  >
+
+              
+
+                  <img 
+                  class="art-portfoilio-section-image"
+                  src="css/img/artwork/SkullAndSword.png"
+                  >
+
+              
+
+                  <img 
+                  class="art-portfoilio-section-image"
+                  src="css/img/artwork/SkullandMoon.png" 
+                  >
+   
+              </div>
+      </section>
+      <!-- section close -->
+
+    </section>
+
+          <!--
       Start Resume
       -->
       <section class="section-container darkgrey-back "> <!-- Holds the entire section (Profile) -->
@@ -117,14 +414,13 @@
               <i class="fas fa-file-alt"></i>
             </div>
           </div>
-          
+        
           <div class="section-header-right">
             <div class="section-chevron-container">
-              <i class="fas fa-chevron-circle-up"></i>
+              <i class="fas fa-chevron-circle-down"></i>
             </div>
           </div>
 
-        
         </div>
 
 
@@ -256,7 +552,7 @@
               </div>
             </div>
 <!--             
-            <div class="resume-content"><!-- Holds section content -->
+            <div class="resume-content">Holds section content -->
               <!-- <div class="resume-history-title-container">
                 <div class="resume-history-title-icon">
                   <i class="fas fa-angle-right"></i>
@@ -286,7 +582,7 @@
                 Emergency fire and medical 911 dispatcher for the county of Alameda. Handling all fire and medical calls for the county, dealing with 7 different fire departments and jurisdictions. Region II center for CalFire and coordinated large scale and state-wide events. Maintained and dispatched for the Lawrenece Livermore Labs site 100, 200 and 300 as well as Sandia Labs. Maintaining the System Status and managing all units: including the different fire apparatus, ambulances, lab systmes and CalFire available units.
               </div>
             </div> -->
-            <!-- <div class="resume-content"><!-- Holds section content -->
+            <!-- <div class="resume-content"><Holds section content -->
               <!-- <div class="resume-history-title-container">
                 <div class="resume-history-title-icon">
                   <i class="fas fa-angle-right"></i>
@@ -447,316 +743,14 @@
         </div> <!-- section content container close -->
 
  
-      <!--
-      Artwork Portfolio Section
-      -->
-      <section class="section-container darkgrey-back"> <!-- Holds the entire section (Design) -->
-        <div id="art-portfolio-header" class="section-nav"> <!-- Holds section nav bar/title -->
-          <div class="section-nav-title aqua-back white-font">
-            <span>DESIGNS</span>
-            <div class="section-nav-icon-container aqua-back">
-              <i class="fas fa-paint-brush"></i>
-            </div>
-          </div>
-          
-          <div class="section-header-right">
-            <div class="section-chevron-container">
-              <i class="fas fa-chevron-circle-up"></i>
-            </div>
-          </div>
-        </div>
-        
-        <div class="section-content-container"><!-- Holds section header and content -->
-          <div class="art-portfolio-container">            
-              <div id="web-section" class="resume-header medgrey-back">
-                <i class="fas fa-chevron-circle-down bluepurple-font"></i>
-                <span class="white-font resume-titles"> DESIGN </span>
-              </div>
-              
-              <div class="art-portfolio-section">
-
-                  <img
-                  class="art-portfoilio-section-image" 
-                  src="css/img/designWork/RecruitmentBanner.png" 
-                  >
-                
-
-                  <img 
-                  class="art-portfoilio-section-image"
-                  src="css/img/designWork/LostSoulsBlackGreenShirt.png" 
-                  >
-
-                  <img 
-                  class="art-portfoilio-section-image"
-                  src="css/img/designWork/LostSoulsRoundLogo.PNG"
-                  >
-
-                  <img 
-                  class="art-portfoilio-section-image"
-                  src="css/img/designWork/PrideBanner.png"
-                  >
-
-                  <img 
-                  class="art-portfoilio-section-image"
-                  src="css/img/designWork/BannerPlain.png"
-                  >
-
-                  <img
-                  class="art-portfoilio-section-image" 
-                  src="css/img/artwork/CyberSkull.png" 
-                  >
-                
-
-                  <img 
-                  class="art-portfoilio-section-image"
-                  src="css/img/artwork/SplitSkullAndFlowers.png" 
-                  >
-
-                  <img 
-                  class="art-portfoilio-section-image"
-                  src="css/img/artwork/Medusa.png"
-                  >
-
-                  <img 
-                  class="art-portfoilio-section-image"
-                  src="css/img/artwork/DoubleSkullFlowers.png"
-                  >
-
-              
-
-                  <img 
-                  class="art-portfoilio-section-image"
-                  src="css/img/artwork/SkullAndSword.png"
-                  >
-
-              
-
-                  <img 
-                  class="art-portfoilio-section-image"
-                  src="css/img/artwork/SkullandMoon.png" 
-                  >
-   
-              </div>
-      </section>
-      <!-- section close -->
-
-    </section> <!-- section close -->
-
-    <!--
-    Portfolio Section
-    -->
-    <section class="section-container darkgrey-back"> <!-- Holds the entire section (Profile) -->  
-      <div id="portfolio-header" class="section-nav"> <!-- Holds section nav bar/title -->
-        <div class="section-nav-title bluepurple-back white-font">
-          <span>PORTFOLIO</span>
-            <div class="section-nav-icon-container bluepurple-back">
-              <i class="fas fa-briefcase"></i>
-            </div>
-          </div>
-        <div class="section-header-right">
-          <div class="section-chevron-container">
-            <i class="fas fa-chevron-circle-up"></i>
-          </div>
-        </div>
-      </div>
-      
-      <div class="section-content-container"><!-- Holds section header and content -->
-          <div class="portfolio-content-container">
-            <div id="web-section" class="resume-header medgrey-back">
-              <i class="fas fa-chevron-circle-down bluepurple-font"></i>
-              <span class="white-font resume-titles"> WEB DESIGNS</span>
-            </div>
-
-            <!-- LEADR entry start  -->
-            <div class="portfolio-section">
-
-              <span class="portfolio-section-title block white-font">Leadr</span>
-
-              <div class="portfoilio-section-image-slide">
-                  <div class="slide">
-                    <img 
-                      class="web-image"
-                      src="css/img/pageImages/LeadrApp.png" 
-                      alt="Image 1"
-                    >
-                  </div>
-                  <div class="slide">
-                    <img 
-                      class="web-image"
-                      src="css/img/siteDesigns/LandingPage.PNG" 
-                      alt="Image 2"
-                    >
-                  </div>
-                  <div class="slide">
-                    <img 
-                      class="web-image"
-                      src="css/img/siteDesigns/1_1 Meeting.webp" 
-                      alt="Image 3"
-                    >
-                  </div>
-                    <div class="slide">
-                    <img 
-                      class="web-image"
-                      src="css/img/siteDesigns/LearningSection.png" 
-                      alt="Image 4"
-                    >
-                  </div>
-                  <div class="slide">
-                    <img 
-                      class="web-image"
-                      src="css/img/siteDesigns/Recognition.PNG" 
-                      alt="Image 5"
-                    >
-                  </div>
-                  <div class="slide">
-                    <img 
-                      class="web-image"
-                      src="css/img/siteDesigns/TeamMeeting.PNG" 
-                      alt="Image 6"
-                    >
-                  </div>
-
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-              </div>
-              
-              <div class="portfoilio-section-title">
-
-                
-                <div class="portfolio-section-design-stack">
-                  Figma  |  Material.UI  | Figjam | Emotion.JS
-                </div>
-
-                <div class="portfolio-section-tech-stack">
-                React  |  Redux  | Typescript | Javascript | Node.js 
-                </div>
-                
-                <div class="portfolio-section-description">
-                A 'People Development' web/mobile application software
-                </div>
-                <!-- <div class="portfolio-section-sitelink"> <a href="https://app.leadr.com/" target="_blank">
-                &nbsp;<i class="fab fa-chrome"></i> &nbsp;Open Site </a> &nbsp;&nbsp;| &nbsp; &nbsp;
-                </div> -->
-              </div>
-            </div><!-- Close for portfolio entry -->
-
-            <!-- RPM entry start  -->
-            <div class="portfolio-section">
-              
-              <span class="portfolio-section-title block white-font">RPM</span>
-
-              <div class="portfoilio-section-image">
-                <img 
-                  class="web-image" 
-                  src="css/img/pageImages/RPM_Dash.png" 
-                  alt=""
-                >
-              </div>
-              
-              <div class="portfoilio-section-title">
-                                
-                  <div class="portfolio-section-design-stack">
-                    AdobeXD  |  Adobe Sketch  | Figjam | Adobe Illustrator
-                  </div>
-              
-                  <div class="portfolio-section-tech-stack">
-                    React  |  Typescript | Node.js |  MongoDB | Firebase
-                  </div>
-
-                  <div class="portfolio-section-description">
-                    A Management application used to track, monitor and test for site specific equipment.
-                  </div>
-
-              </div>
-            </div><!-- Close for portfolio entry -->
-
-            <!-- MUSIC entry start  -->
-            <!-- <div class="portfolio-section">
-              <div class="portfoilio-section-image">
-                <img src="css/img/pageImages/Austin-Music.png" alt="">
-              </div>
-              <div class="portfoilio-section-title">
-                <span class="portfolio-section-title block white-font">Austin Music Scene</span>
-                <div class="portfolio-section-tech-stack">
-                Node.js  |  Express  |  React  |  MongoDB
-                </div>
-                <div class="portfolio-section-description">
-                An Austin specific music app with information and details about different events and bands.
-                </div>
-              </div>
-            </div>Close for portfolio entry -->
-
-            <!-- Portfolio entry start  -->
-            <div class="portfolio-section">
-              
-              <span class="portfolio-section-title block white-font">Comic Store</span>
-
-              <div class="portfoilio-section-image">
-                <img 
-                  class="web-image"
-                  src="css/img/pageImages/Comic-Store.png" 
-                  alt=""
-                >
-              </div>
-              
-              <div class="portfoilio-section-title">
-
-                                                
-                <div class="portfolio-section-design-stack">
-                  Adobe:  | Sketch | Photoshop | Illustrator
-                </div>
-            
-
-                <div class="portfolio-section-tech-stack">
-                  Mongoose  |  Express  |  Node.js
-                </div>
-                
-                <div class="portfolio-section-description">
-                A comic book store using a MEN stack. Can add, delete and buy each book, as well as register and login.
-                </div>
-
-              </div>
-            </div><!-- Close for portfolio entry -->
-
-            <!-- Portfolio entry start  -->
-            <div class="portfolio-section">
-
-              <span class="portfolio-section-title block white-font">What's That Trailer</span>
-
-              <div class="portfoilio-section-image">
-                <img
-                  class="web-image"
-                  src="css/img/pageImages/whats-that-trailer.png" 
-                  alt=""
-                >
-              </div>
-                
-                <div class="portfoilio-section-title">
-                    
-                    <div class="portfolio-section-design-stack">
-                      Adobe:  | Sketch | Photoshop | Illustrator
-                    </div>
-
-                    <div class="portfolio-section-tech-stack">
-                      Node  |  Express  |  Angular  |  MongoDB
-                    </div>
-                    
-                    <div class="portfolio-section-description">
-                      This site lets you search and add movies that you want to see or are upcoming films you want 
-                      to make sure you keep track off once they hit theatres.
-                    </div>
-                  
-                </div>
-            </div>
-
-          </div> <!-- Close for container that holds all portfolio entries -->  <!--Close for container that holds entire portfolio section  -->
-
-      </div> <!-- section content container close -->
-
-    </section> <!-- section close -->
+ <!-- section close -->
 
       <section class="section-container darkgrey-back"> <!-- Holds the entire section (Profile) -->
-        <div id="contact-header" class="section-nav"> <!-- Holds section nav bar/title -->
+        
+        <div id="contact-header" class="section-nav">
+          
+          <!-- <span class="tooltipText">Click to expand</span> -->
+          <!-- Holds section nav bar/title -->
           <div class="section-nav-title blue-back white-font">
             <span>CONTACT</span>
             <div class="section-nav-icon-container blue-back">
@@ -765,10 +759,11 @@
           </div>
           <div class="section-header-right">
             <div class="section-chevron-container">
-              <i class="fas fa-chevron-circle-up"></i>
+              <i class="fas fa-chevron-circle-down"></i>
             </div>
           </div>
         </div>
+
         <div class="section-content-container"><!-- Holds section header and content -->
           <div class="contact-container">
             <div class="contact-content-container">
