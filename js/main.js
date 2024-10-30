@@ -95,3 +95,12 @@ showSlides(slideIndex);function plusSlide(n) {
 }function nextSlide() {
   plusSlide(1);
 }
+
+function openPortfolioTab(sectionName) {
+  var i;
+  var x = document.getElementsByClassName("portfolioTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(sectionName).style.display = "block";
+}

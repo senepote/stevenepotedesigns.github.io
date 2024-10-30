@@ -40,14 +40,11 @@
       Start Profile Section
       -->
       <section class="section-container darkgrey-back"> <!-- Holds the entire section (Profile) -->
-        <div class="section-nav"> <!-- Holds section nav bar/title -->
-          <div class="section-nav-title-profile">
+          <div class="section-nav-title purple-back white-font">
+            <i class="fas fa-user-circle"></i>
             <span>PROFILE</span>
-            <div class="section-nav-icon-container-profile">
-              <i class="fas fa-user-circle"></i>
-            </div>
           </div>
-        </div>
+
         <div class="section-content-container"><!-- Holds section header and content -->
 
           <div id="profile-header" class="section-header"> <!-- Holds portrait, title and contact info -->
@@ -108,21 +105,19 @@
     Portfolio Section
     -->
     <section class="section-container darkgrey-back"> <!-- Holds the entire section (Profile) -->  
-      <div id="portfolio-header" class="section-nav"> <!-- Holds section nav bar/title -->
+      <!-- <div id="portfolio-header" class="section-nav  bluepurple-back">  -->
         <div class="section-nav-title bluepurple-back white-font">
+          <i class="fas fa-briefcase"></i>
           <span>PORTFOLIO</span>
-            <div class="section-nav-icon-container bluepurple-back">
-              <i class="fas fa-briefcase"></i>
-            </div>
-          </div>
-      </div>
+        </div>
+      <!-- </div> -->
       
       <div class="section-content-container"><!-- Holds section header and content -->
           <div class="portfolio-content-container">
-            <div id="web-section" class="resume-header medgrey-back">
+            <!-- <div id="web-section" class="resume-header medgrey-back">
               <i class="bluepurple-font"></i>
               <span class="white-font resume-titles"> WEB DESIGNS</span>
-            </div>
+            </div> -->
 
             <!-- LEADR entry start  -->
             <div class="portfolio-section">
@@ -329,23 +324,140 @@
       Artwork Portfolio Section
       -->
       <section class="section-container darkgrey-back"> <!-- Holds the entire section (Design) -->
-        <div id="art-portfolio-header" class="section-nav"> <!-- Holds section nav bar/title -->
-          <div class="section-nav-title aqua-back white-font">
+
+          <div class="section-nav-title aqua-back black-font">
+            <i class="fas fa-paint-brush"></i>
             <span>DESIGNS</span>
-            <div class="section-nav-icon-container aqua-back">
-              <i class="fas fa-paint-brush"></i>
-            </div>
           </div>
 
-        </div>
-        
-        <div class="section-content-container"><!-- Holds section header and content -->
-          <div class="art-portfolio-container">            
-              <div id="web-section" class="resume-header medgrey-back">
-                <i class="fas fa-chevron-circle-down bluepurple-font"></i>
-                <span class="white-font resume-titles"> DESIGN </span>
+          <div class="tabBar">
+            <button class="tabButton mellowpink-back black-font" onclick="openPortfolioTab('Logos')">Logos</button>
+            <button class="tabButton aqua-back black-font" onclick="openPortfolioTab('Marketing')">Marketing</button>
+            <button class="tabButton bluepurple-back black-font" onclick="openPortfolioTab('Merchandise')">Merchandise</button>
+            <button class="tabButton pink-back black-font" onclick="openPortfolioTab('Artwork')">Artwork</button>
+          </div>
+          
+          <div id="Logos" class="portfolioTab">
+            <h2 class="mellowpink-font">Logos</h2>
+
+              <div class="art-portfolio-container">                         
+                <div class="artGridSection">
+                  <div class="gridImg">
+                    <img 
+                      class="art-portfoilio-section-image"
+                      src="css/img/designWork/LostSoulsRoundLogo.PNG"
+                    >
+                  </div>
+                  <div class="gridImg">
+                    <img 
+                      class="art-portfoilio-section-image"
+                      src="css/img/designWork/LSSkullGreen.PNG"
+                    >
+                  </div>
+                  <div class="gridImg">
+                    <img 
+                      class="art-portfoilio-section-image"
+                      src="css/img/designWork/DjMilliPinkBlue.png" 
+                    >
+                  </div>
+                </div>
               </div>
-              
+
+          </div>
+
+          <div id="Marketing" class="portfolioTab" style="display:none">
+            <h2 class="aqua-font">Marketing</h2>
+
+            <div class="art-portfolio-container">                         
+              <div class="artGridSection">
+                <div class="gridImg">
+                  <img
+                    class="art-portfoilio-section-image" 
+                    src="css/img/designWork/RecruitmentBanner.png" 
+                  >
+                </div>
+                <div class="gridImg">
+                  <img 
+                    class="art-portfoilio-section-image"
+                    src="css/img/designWork/PrideBanner.png"
+                  >
+                </div>
+              </div>
+            </div>  
+          </div>	
+          	
+
+          
+          <div id="Merchandise" class="portfolioTab" style="display:none">
+            <h2 class="bluepurple-font">Merchandise</h2>
+
+            <div class="art-portfolio-container">                         
+              <div class="artGridSection">
+                <div class="gridImg">
+                  <img 
+                    class="art-portfoilio-section-image"
+                    src="css/img/designWork/LostSoulsBlackGreenShirt.png" 
+                  >
+                </div>   
+              </div>
+            </div>
+          </div>	
+          
+          
+          <div id="Artwork" class="portfolioTab" style="display:none">
+            <h2 class="pink-font">Artwork</h2>
+
+            <div class="art-portfolio-container">                         
+              <div class="artGridSection">
+                <div class="gridImg">              
+                  <img
+                    class="art-portfoilio-section-image" 
+                    src="css/img/artwork/CyberSkull.png" 
+                  >
+                </div>
+                <div class="gridImg">
+                  <img 
+                    class="art-portfoilio-section-image"
+                    src="css/img/artwork/SplitSkullAndFlowers.png" 
+                  >
+                </div>
+                <div class="gridImg">
+                  <img 
+                    class="art-portfoilio-section-image"
+                    src="css/img/artwork/Medusa.png"
+                  >
+                </div>
+                <div class="gridImg">
+                  <img 
+                    class="art-portfoilio-section-image"
+                    src="css/img/artwork/DoubleSkullFlowers.png"
+                  >
+                </div>
+                <div class="gridImg">
+                  <img 
+                    class="art-portfoilio-section-image"
+                    src="css/img/artwork/SkullAndSword.png"
+                  >
+                </div>
+                <div class="gridImg">
+                  <img 
+                    class="art-portfoilio-section-image"
+                    src="css/img/artwork/SkullandMoon.png" 
+                  >
+                </div>
+
+                <div class="gridImg">
+                  <img 
+                    class="art-portfoilio-section-image"
+                    src="css/img/designWork/FullSleeve.png" 
+                  >
+                </div>
+              </div>
+            </div>
+          
+          </div>	
+        <!-- <div class="section-content-container">
+          <div class="art-portfolio-container">                         
 
               <div class="artGridSection">
                 <div class="gridImg">
@@ -432,7 +544,7 @@
                     src="css/img/designWork/FullSleeve.png" 
                   >
                 </div>
-              </div>  
+              </div>   -->
               <!-- <div class="art-portfolio-section">
 
                   <img
@@ -498,28 +610,12 @@
 
     </section>
 
-          <!--
-      Start Resume
-      -->
       <section class="section-container darkgrey-back "> <!-- Holds the entire section (Profile) -->
         
-        <div id="resume-header" class="section-nav"> <!-- Holds section nav bar/title -->
-          
           <div class="section-nav-title mellowpink-back white-font">
+            <i class="fas fa-file-alt"></i>
             <span>RESUME</span>
-            <div class="section-nav-icon-container mellowpink-back">
-              <i class="fas fa-file-alt"></i>
-            </div>
           </div>
-        
-          <div class="section-header-right">
-            <div class="section-chevron-container">
-              <i class="fas fa-chevron-circle-down"></i>
-            </div>
-          </div>
-
-        </div>
-
 
 
         <div class="resume-container"><!-- Holds section header and content -->
@@ -841,24 +937,12 @@
 
  
         <section class="section-container darkgrey-back "> 
-        
-          <div id="aboutMeHeader" class="section-nav"> 
+ 
             
             <div class="section-nav-title pink-back white-font">
+              <i class="fas fa-file-alt"></i>
               <span>ABOUT ME</span>
-              <div class="section-nav-icon-container pink-back">
-                <i class="fas fa-file-alt"></i>
-              </div>
             </div>
-          
-            <div class="section-header-right">
-              <div class="section-chevron-container">
-                <i class="fas fa-chevron-circle-down"></i>
-              </div>
-            </div>
-  
-          </div>
-  
   
   
           <div class="aboutMeContainer">
@@ -898,23 +982,12 @@
         </section>
 
       <section class="section-container darkgrey-back"> <!-- Holds the entire section (Profile) -->
-        
-        <div id="contact-header" class="section-nav">
-          
-          <!-- <span class="tooltipText">Click to expand</span> -->
-          <!-- Holds section nav bar/title -->
+
           <div class="section-nav-title blue-back white-font">
+            <i class="fas fa-address-card"></i>
             <span>CONTACT</span>
-            <div class="section-nav-icon-container blue-back">
-              <i class="fas fa-address-card"></i>
-            </div>
           </div>
-          <div class="section-header-right">
-            <div class="section-chevron-container">
-              <i class="fas fa-chevron-circle-down"></i>
-            </div>
-          </div>
-        </div>
+
 
         <div class="section-content-container"><!-- Holds section header and content -->
           <div class="contact-container">
