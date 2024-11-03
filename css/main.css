@@ -615,7 +615,7 @@ span {
   box-sizing: border-box;
 }
 
-.portfoilio-section-image {
+.portfoilio-section-image, .slide {
   display: flex;
   justify-content: center;
   width: 85%;
