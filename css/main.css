@@ -227,6 +227,11 @@ a:hover {
   width: 100%;
 }
 
+.section-container-top {
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+
 /*-------------------------------------
   Section Containers
 --------------------------------------*/
@@ -259,6 +264,7 @@ a:hover {
   height: 29px;
   font-size: 20px;
   font-weight: bold;
+  border-radius: 25px 25px 0 0;
 }
 
 span {
@@ -604,7 +610,7 @@ span {
   align-items: center;
   margin-top: 1.5em;
   padding-bottom: 1.5em;
-  border-bottom: 1px solid var(--medgrey);
+  /* border-bottom: 1px solid var(--medgrey); */
   width: 100%;
   height: auto;
 }
