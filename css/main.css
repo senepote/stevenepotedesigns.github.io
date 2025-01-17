@@ -240,6 +240,7 @@ a:hover {
 .section-content-container {
   display: flex;
   flex-direction: column;
+  padding: 0 25px;
 }
 
 .section-content {
@@ -464,6 +465,8 @@ span {
 }
 
 .resume-history-title {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
 }
@@ -475,6 +478,7 @@ span {
 
 .resume-history-title-container {
   display: flex;
+  flex-direction: row;
   margin-top: 1em;
 }
 
@@ -490,7 +494,7 @@ span {
 }
 
 .resume-history-content {
-  padding: 1.4em 0;
+  padding: 1.5em 65px;
   border-bottom: 1px solid var(--grey);
 }
 
@@ -610,7 +614,6 @@ span {
   align-items: center;
   margin-top: 1.5em;
   padding-bottom: 1.5em;
-  /* border-bottom: 1px solid var(--medgrey); */
   width: 100%;
   height: auto;
 }
@@ -623,7 +626,8 @@ span {
 
 .portfoilio-section-image,  
 .portfoilio-section-image-slide,
-.slide {
+.slide,
+.slide2 {
   display: flex;
   justify-content: center;
   width: 85%;
@@ -661,12 +665,7 @@ span {
   color: var(--aqua);
 } */
 
-.portfolio-section-description {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 
-}
 
 .descHead {
   color: var(--aqua);
@@ -682,7 +681,7 @@ span {
   position: relative;
 }
 
-.slide {
+.slide, .slide2 {
   width: 85%;
   position: relative;
   display: none;
@@ -693,17 +692,28 @@ span {
   border-radius: 5px;
 }
 
-.slide:first-child {
+.slide:first-child, .slide2:first-child {
   display: block;
 }
 
 .portfolio-section-tech-stack, .portfolio-section-description, .portfolio-section-sitelink, .portfolio-section-design-stack {
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   border-bottom: 1px solid var(--medgrey);
-  padding: .7em 0;
+  padding: 25px;
+  font-size: 20px;
+}
+
+.portfolio-section-description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;  
+  color: white;
+  padding: 25px;
+  padding-bottom: 35px;
 }
 
 .portfolio-section-sitelink a {
@@ -717,12 +727,18 @@ span {
 }
 
 .portfolio-section-title {
+  display: flex;
+  flex-direction: column;
   padding-top: 0;
-  font-size: 2em;
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 35px;
 }
 
 .portfolio-section-tech-stack {
-  color: var(--blue);
+  color: var(--bluepurple);
 }
 
 .portfolio-section-design-stack {
