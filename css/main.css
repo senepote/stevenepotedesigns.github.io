@@ -630,7 +630,7 @@ span {
 .slide2 {
   display: flex;
   justify-content: center;
-  width: 85%;
+  width: 70%;
   padding: 1em;
   box-sizing: border-box;
 }
@@ -661,19 +661,12 @@ span {
   text-align: center;
 }
 
-/* .selectedTabTitle {
-  color: var(--aqua);
-} */
-
-
-
 .descHead {
   color: var(--aqua);
 }
 
 .portfoilio-section-image-slide {
   display: flex;
-  /* margin: 125px 0; */
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -682,7 +675,7 @@ span {
 }
 
 .slide, .slide2 {
-  width: 85%;
+  /* width: 85%; */
   position: relative;
   display: none;
 }
@@ -897,12 +890,16 @@ span {
 .gridImg {
   display: flex;
   width: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--pink);
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .art-portfoilio-section-image {
-  width: 80%;
+  width: 70%;
   padding: 1em;
 }
 
