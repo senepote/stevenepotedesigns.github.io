@@ -608,6 +608,10 @@ span {
   /* overflow-y: scroll; */
 }
 
+.roleTag {
+  color: var(--pink)
+}
+
 .portfolio-section {
   display: flex;
   flex-direction: column;
@@ -889,13 +893,15 @@ span {
 
 .gridImg {
   display: flex;
-  width: 100%;
+  width: 80%;
+  justify-self: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: var(--pink);
   font-size: 20px;
   font-weight: bold;
+  /* border: 1px solid var(--pink); */
 }
 
 .art-portfoilio-section-image {
